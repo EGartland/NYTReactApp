@@ -5,45 +5,47 @@ const SearchForm = props => (
 
  
       <div className="form-group">
-        <label htmlFor="search">Poop:</label>
+        <label htmlFor="search">Topic</label>
         <input
           onChange={props.setTopic}
           name="search"
           type="text"
           className="form-control"
-          placeholder="Subject"
+          placeholder="President Obama"
           id="search"
         />      <br />
 
+         <label htmlFor="search">Start Year</label>
         <input
           onChange={props.setStartYear}
           name="startYear"
           type="text"
           className="form-control"
-          placeholder="Starting year"
+          placeholder="1901"
           id="startYear"
         />      <br />
 
+         <label htmlFor="search">End Year</label>
         <input
           onChange={props.setEndYear}
           name="endYear"
           type="text"
           className="form-control"
-          placeholder="Ending Year"
+          placeholder="2018"
           id="endYear"
         />
         <br />      <br />
 
         <button
           onClick={props.handleFormSubmit}
-          className="btn btn-primary"
+          className="btn btn-sm btn-outline-primary"
         >
           Search
       </button>
         <button
         
           onClick={props.viewSaved}
-          className="btn btn-primary"
+          className="btn btn-sm btn-outline-primary"
           style = {{margin:10}}
         >
           View Saved

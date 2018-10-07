@@ -8,20 +8,28 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/journal/bootstrap.min.css" />
-  <title>React Reading List</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <title>NYT React Application</title>
 </head>
 
 <body>
   <noscript>
-    You need to enable JavaScript to run this app.
+    You need to enable JavaScript to run this application.
   </noscript>
+  <nav class="navbar fixed-top navbar-light bg-primary">
+    <span class="navbar-text">
+      New York Times Article Scraper
+    </span>
+  </nav>
+  <br>
+  <br>
   <div class='container'>
     <div class='row'>
-      <div class='col-md-2'></div>
+      <div class='col-md-3'></div>
 
-      <div  class='col-md-8'>
+      
           <div class="container">
-              <div class="jumbotron">
+              <div class="jumbotron jumbotron-fluid">
                 <h1>New York Times Search</h1> 
                 <h5>Search for articles and save them.
                 </h5> 
@@ -30,12 +38,13 @@
               <p>or enter data and search for new ones</p> 
             </div>
           </div>
+          <div  class='col-md-1'></div>
             <div id ='root'>
 
             </div>
 
     </div>
-    <div class='col-md-2'></div>
+    <div class='col-md-1'></div>
 
 
   </div>
